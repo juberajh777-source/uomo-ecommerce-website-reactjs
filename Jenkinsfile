@@ -1,11 +1,10 @@
 pipeline {
     agent any
 
-    tools {
-        // Use the NodeJS tool name configured in Jenkins
-        // e.g. "NodeJS_20" or "nodejs" - whatever you used last time
-        nodejs "NodeJS_20"
-    }
+ tools {
+    nodejs "node-js24"
+}
+
 
     stages {
         stage('Checkout') {
